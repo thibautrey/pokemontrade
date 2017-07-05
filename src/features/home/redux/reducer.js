@@ -1,15 +1,6 @@
 import initialState from './initialState';
-import { reducer as counterPlusOne } from './counterPlusOne';
-import { reducer as counterMinusOne } from './counterMinusOne';
-import { reducer as resetCounter } from './resetCounter';
-import { reducer as fetchRedditReactjsList } from './fetchRedditReactjsList';
 
-const reducers = [
-  counterPlusOne,
-  counterMinusOne,
-  resetCounter,
-  fetchRedditReactjsList,
-];
+const reducers = [];
 
 export default function reducer(state = initialState, action) {
   let newState;
