@@ -19,12 +19,15 @@ export default class App extends Component {
 
     render() {
         return (
-            <div className="home-app">
-                <center><SimpleNav routes={routeConfig} /></center>
-                <div className="page-container">
+            <div className="home-app container-fluid">
+                <center style={{padding: "10px", color: "rgb(255,203,6)"}} className="websiteTitle">Pokemon Trade</center>
+                <div className="page-container row-fluid">
                     {this.props.children}
                 </div>
             </div>
         );
     }
 }
+/*
+<center><SimpleNav routes={routeConfig} /></center>
+*/
